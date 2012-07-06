@@ -1,0 +1,129 @@
+{*
+	**
+	 *
+	 * Layout aplikacji: trasy rowerowe
+	 *
+	 * @package layout.html
+	 * @author Alicja Cyganiewicz
+	 * @since 21.03.2012
+	 *
+*}
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title> Trasy Rowerowe 
+				{if isset($title)}
+					- {$title}
+				{/if}
+			
+		</title>
+		<LINK REL=StyleSheet HREF="./fx/css/style.css"  TYPE="text/css"> 
+		<script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>  
+		<link rel="stylesheet" type="text/css" href="./fx/css/shadowbox.css">
+		<script type="text/javascript" src="./fx/js/shadowbox.js"></script>
+		<script type="text/javascript">
+			Shadowbox.init();
+		</script> 
+	</head>
+	<body>  
+		<div id="wrap">      
+        
+		<div class="search_nav">
+			<form name="search_main" action="search.php" method="get" role="search">
+				Szukaj <input class="search_input" type="text" name="search"><input type="hidden" name='site' value="{$smarty.session.last}">
+				<input type="image" src="./fx/bitmapy/button.png" alt="OK" class="search_ok"/>
+			</form>
+		</div>
+		
+		<div class="baner" role="banner"><a href="all.php" accesskey="m"><img src="./fx/bitmapy/logo.png" alt="Kraków na rowerze"></a></div>
+		
+		<div class="nav_small">
+				<ul>
+					<li><a href="index.php"> Strona główna</a></li>
+					<li><a href="about_author.php"> O autorze</a></li>
+					<li><a href="about_site.php"> O serwisie</a></li>					
+				</ul>
+		</div>
+
+		
+			{if isset($smarty.session.user)}
+				<div class="user_panel">
+				<img src="./fx/bitmapy/trojkat.png" alt=""> Witaj {$smarty.session.user.Login}! <img src="./fx/bitmapy/trojkat.png" alt="">
+					<ul>
+						<li><a href="add_route.php" accesskey="n">Dodaj trasę</a></li>
+						<li><a href="delete_route.php">Usuń trasę</a></li>
+						<li><a href="edit_profile.php">Edytuj profil</a></li>
+						<li class="log_out"><a href="logout.php" accesskey="q">Wyloguj</a></li>
+					</ul>
+				</div>
+			{else}
+				<div class="login_panel">
+					<form method="post" action="login.php">
+				
+						Login/E-mail <input type="text" name="Login" class="login_input"/>
+						Hasło <input type="password" name="Haslo" class="pass_input"/>
+							<input type="image" name="login" src="./fx/bitmapy/button3.png" alt="Loguj" class="login_submit"/>
+						
+							<a href="sign_up.php">Zarejestruj</a>
+					</form> 
+				</div>
+			{/if}
+		
+		
+		<div class="container">
+
+				<div class="nav_main" role="navigation">
+					<div class="nav_main_background">
+						<div class="all">
+							<a href="index.php"><img id="all" src="./fx/bitmapy/wszystkie.png" alt="Wszystkie ">
+								<br> <span class="subt">Wszystkie</span></a>
+						</div>
+						<div class="popular">
+							<a href="index.php?order=popular"><img id="popular" src="./fx/bitmapy/popularne.png" alt="Popularne ">
+								<br><span class="subt">Popularne</span></a>
+						</div>
+						<div class="fast">
+							<a href="index.php?order=fast"><img id="fast" src="./fx/bitmapy/szybkie.png" alt="Szybkie ">
+								<br><span class="subt">Szybkie</span></a>
+						</div>
+						<div class="hard">
+							<a href="index.php?order=hard"><img id="hard" src="./fx/bitmapy/trudne.png" alt="Trudne ">
+								<br><span class="subt">Trudne</span></a>
+						</div>
+						<div class="recreative">
+							<a href="index.php?order=recreative"><img id="recreative" src="./fx/bitmapy/rekreacyjne.png" alt="Rekreacyjne ">
+								<br><span class="subt">Rekreacyjne</span></a>
+						</div>
+						<div class="educational">
+							<a href="educational.php"><img id="educational" src="./fx/bitmapy/edukacyjne.png" alt="Edukacyjne ">
+								<br><span class="subt">Edukacyjne</span></a>
+						</div>
+						<p>Jakie trasy?</p>
+					</div>
+				</div>
+				<div class="content">
+					{if isset($status.statements.display_errors) && count($status.statements.display_errors)}
+						<div class="statements">{$status.statements.display_errors}</div>
+					{/if}
+					{if isset($content)}
+						{include file="$content.tpl"}
+					{else}
+						{include file="404.tpl"}
+					{/if}
+				</div>
+		</div>
+		<footer>
+		</footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script src="./fx/js/mapki.js">
+	</script>
+	<script src="./fx/js/icons_choice.js">
+	</script>
+	<script src="./fx/js/skrypt.js">
+	</script>
+
+	</div>	
+	</body>
+</html>

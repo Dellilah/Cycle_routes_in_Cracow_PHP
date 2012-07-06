@@ -1,0 +1,592 @@
+body{
+	background: #3A5664;
+	font-family: "Arial";
+	border-style: none;
+	margin: auto;
+	padding: auto;
+}
+
+#wrap{
+	width: 1359px;
+}
+
+
+.search_nav{
+
+	line-height: 2em;
+	background: #2C3D47;
+	color: #999999;
+	text-align: right;
+	font-weight: bold;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+
+}
+
+input.search_input {
+	background-color: #999999;
+	border: none;
+	padding: 2px;
+	margin-right: -4px;
+}
+
+input.search_input:focus{
+	border: 3px solid #526068;
+	padding: -5px;
+}
+
+.search_ok{
+
+	width: 40px;
+	height: 21px;
+	position: relative;
+	right: 4px;
+	top: 5.6px;
+}
+
+.baner{
+	width: 250px;
+	float: left;
+	position: relative;
+	left: 25px;
+	top: 30px;
+	z-index: 5;
+}
+
+.nav_small{
+	position: relative;
+	left: 40px;
+	top: 22px;
+	font-weight: bold;
+	width: 800px;
+	font-size: 15px;
+	height: 25px;
+}
+
+ul{
+	list-style:none;
+}
+
+.nav_small ul{
+	color: #99CCCC;
+
+	height: inherit;
+}
+
+
+.nav_small ul li{
+	display: inline;
+	line-height: 20px;
+	padding: 5px;
+	width: 200px;
+	margin-right:40px;
+}
+
+.nav_small ul li a:hover{
+	color: #99CC33;
+}
+
+a
+{
+	color: inherit;
+    text-decoration: none;
+    border-style: none;
+}
+
+.user_panel ul li a:hover
+{
+     font-size:110%
+}
+
+.user_panel{
+
+	width: 15%;
+	text-align: center;
+	position: relative;
+	color: #99CC33;
+	top: 5px;
+	font-weight: bold;
+	float: right;
+	z-index: 6;
+	right: 50px;
+	padding: 0px;
+
+}
+
+.user_panel img{
+	width: 9px;
+	height:9px;
+}
+
+.user_panel ul{
+	margin-top: 0px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: #3A5664;
+}
+
+.user_panel ul li{
+	text-align: center;
+	padding: 3px;
+	line-height: 23px;
+}
+
+.hide{
+	display: none;
+}
+
+/*.border{
+	border-bottom: 1px solid #999999;
+	border-left: 1px solid #999999;
+}
+*/
+
+.log_out{
+	color: #99CCCC;
+}
+
+.login_panel{
+	float: left;
+	width: 600px;
+	right: -40px;
+	position: absolute;
+	top: 70px;
+	color: #99CC33;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+input.login_input, input.pass_input {
+	border: none;
+	padding: 2px;
+	width: 95px;
+	background-color: #E8F4F4;
+}
+
+.login_panel a{
+	padding-left: 20px;
+}
+
+.login_submit{
+
+	width: 9%;
+	height: 9%;
+	position: relative;
+	right: -4px;
+	top: 5.6px;
+}
+
+
+.container{
+	background-color: #E8F4F4;
+	width: 1170px;
+	border: 5px solid #2C3D47;
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 30px;
+	/*height: 1500px;*/
+}
+
+div.nav_main {
+	background-color: inherit;
+	height: 60px;
+	width: 1185px;
+}
+
+.nav_main_background{
+	background-color: #99CC33;
+	height: 20px;
+	position: relative;
+	top: 25px;
+	width: 101.3%;
+
+	font-weight: bold;
+	font-size: 1em;
+	/*font-variant: small-caps;*/
+	color: #008000;
+}
+
+.all{
+	margin-left: 70px;
+}
+
+.all, .popular, .fast, .hard, .recreative, .educational{
+
+	float: left;
+	width: 77px;
+	/*height: 50px;*/
+	margin-top: -20px;
+
+}
+.popular, .fast, .hard, .recreative, .educational{
+
+	margin-left: 45px;
+
+}
+
+.all a, .popular a, .fast a, .hard a, .recreative a, .educational a {
+	font-size:100%
+}
+
+.nav_main_background p{
+	text-align: right;
+	float: left;
+	width: 100px;
+	margin-top: 0px;
+	right: 25px;
+	position: absolute;
+}
+
+
+div.nav_main_background span{
+	margin-top: 0px;
+}
+
+.add_points li{
+	display: inline;
+}
+
+.add_point{
+	margin-top: 15px;
+	margin-left:35px;
+}
+
+div.content{
+	position: relative;
+	top:30px;
+}
+
+div.one_route_inf{
+	background-image:url('../bitmapy/tlo_wyc.png');
+	/*background-size:1100px 280px;*/
+	background-repeat:no-repeat;
+	width: 1100px;
+	/*float: none;*/
+	height: 270px;
+	padding-left: 15px;
+	padding-bottom: 15px;
+	padding-top: 10px;
+}
+
+div.google_map{
+	width: 250px;
+	float: left;
+	top: 38px;
+	/*position: relative;*/
+	z-index: 2;
+}
+
+div.google_map img{
+	width: inherit;
+	float: left;
+	border: solid #2C3D47;
+	
+}
+
+div.rout_inf{
+	width: 300px;
+	height: 250px;
+	float: left;
+	z-index: 2;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+div.rout_inf ul{
+	width: 300px;
+	height: 250px;
+}
+
+div.forward {
+	margin-bottom:50px;
+}
+
+div.rout_inf ul li{
+	width: 300px;
+	height: 3em;
+}
+div.rout_inf ul li h2 a:hover{
+	color: green;
+}
+div.pictures_min{
+	position: relative;
+	/*top: -250px;*/
+	width: 330px;
+	height: 250px;
+	float: left;
+	z-index: 2;
+}
+.pictures_min li{
+	display: inline;
+}
+ul.routes_list li{
+	height: 280px;
+	margin-bottom: 10px;
+}
+
+tr.popularity td{
+	width: 39px;
+}
+ul.icons li, ul.icons_choice li{
+	display: inline;
+}
+.popularity td img{
+	height: 30px;
+	width: 30px;
+	border: 0px;
+}
+
+.icons li img, .icons_choice li img{
+	height: 30px;
+	width: 30px;
+	border: 0px;
+}
+
+div#mapka{
+
+	width: 500px;
+	height: 300px; 
+	border: 1px solid black; 
+	background: gray;
+	float: left;
+	margin-right: 50px;
+	z-index: 3;
+}
+
+div.map_data, div.map_data div{
+	display:none;
+}
+
+#gallery ul li{
+	display: inline;
+}
+
+div.one_route_inf span.more{
+	position: relative;
+	top:225px;
+	float: right;
+	right: 34px;
+}
+
+div.one_route_inf span.errors{
+	position: absolute;
+	left: 75px;
+}
+
+div.picture_of_me{
+width: 530px;
+height: 580px;
+margin-left: 40px;
+}
+
+div.picture_of_me img{
+
+	width: 389px;
+	height: 519px;
+	border: 1px solid black; 
+	background: gray;
+
+}
+
+div.about_us{
+	background-image:url('../bitmapy/tlo_about.png');
+	background-repeat:no-repeat;
+	position: relative;
+	padding: 15px;
+width: 619px;
+top: -580px;
+left: 500px;
+height: 520px;
+}
+
+ul.all_points{
+	width: 500px;
+	float: left;
+}
+
+ul.all_points li{
+	font-size: 20px;
+	margin:3px;
+}
+
+div#mapka{
+	margin-bottom: 20px;
+}
+
+ul.all_points li a:hover{
+	font-size: 100%;
+}
+
+ul.short_info{
+	height: 320px;
+	position: relative;
+	top: 10px;
+}
+
+ul.short_info li{
+	margin-bottom: 30px;
+}
+
+.add_route li{
+	margin-bottom: 15px;
+}
+/*
+.add_route li label{
+	float:left;
+}
+
+.add_route li label{
+	float:left;
+}*/
+
+/*.add_route li input{
+	position: relative;
+	left: 100px;
+}*/
+.add_picture_area{
+	border-top-color: #99CC33;
+	border-left-color: #99CC33;
+	border-right-color: #99CC33;
+}
+
+.add_route li textarea{
+	position: relative;
+	left: 70px;
+}
+
+.textarea{
+	position: relative;
+	top: -155px;
+}
+
+ul.icons_choice {
+	position: relative;
+	left: 123px;
+}
+
+.adding_route h1{
+	font-size: 130%;
+	color: black;
+}
+
+.adding_route{
+
+	margin-top: 20px;
+	padding: 30px;
+	color: #006400;
+	font-weight: bold;
+	background-image:url('../bitmapy/tlo_add.png');
+	/*background-size:1100px 280px;*/
+	/*background-size: 1160px 587px;*/
+	background-repeat:no-repeat;
+	border: none;
+}
+
+.adding_route legend{
+  background-color: #99CC33;
+  padding: 0.2em 0.5em;
+  color: #006400;
+  font-size:150%;
+  text-align:left;
+}
+
+.sign_up{
+	font-weight: bold;
+	background-image:url('../bitmapy/tlo_register.png');
+	/*background-size:1100px 280px;*/
+	/*background-size: 1160px 587px;*/
+	background-repeat:no-repeat;
+	border: none;
+	margin-bottom: 40px;
+}
+
+.sign_up legend{
+  background-color: #99CCCC;
+  padding: 0.2em 0.5em;
+  color: #3A5664;
+  font-size:150%;
+  text-align:left;
+}
+
+#add_field_point{
+	margin-left: 56px;
+	margin-top: 10px;
+}
+
+#add_field_picture{
+	margin-left: 55px;
+	margin-top: 8px;
+	margin-bottom: 60px;
+}
+
+.add_picture{
+	margin-left: 35px;
+}
+
+.add_route_button{
+	position: relative;
+top: -70px;
+left: 35px;
+}
+
+.sign_up ul li{
+	margin-bottom: 15px;
+	color: #3A5664;
+}
+
+.sign_up input{
+	position: absolute;
+	left: 200px;
+}
+
+.sign_up ul{
+	margin-bottom: 60px;
+}
+
+.sign_up input.sign_up_button{
+	position: absolute;
+left: 56px;
+}
+
+.other{
+	background-image:url('../bitmapy/tlo_other.png');
+	/*background-size:1100px 280px;*/
+	/*background-size: 1160px 587px;*/
+	background-repeat:no-repeat;
+	padding: 50px;
+
+}
+
+.other2{
+	background-image:url('../bitmapy/tlo_other2.png');
+	/*background-size:1100px 280px;*/
+	/*background-size: 1160px 587px;*/
+	background-repeat:no-repeat;
+	padding: 50px;
+
+}
+
+.other2 form input{
+	position: absolute;
+	left: 300px;
+	margin-bottom: 10px;
+}
+
+.about_site{
+	padding: 60px;
+	width: 1000px;
+	margin: auto;
+	margin-bottom: 40px;
+	background-image:url('../bitmapy/tlo_other.png');
+	background-repeat:no-repeat;
+	background-size: 1000px 470px;
+}
+
+.acknowledgements{
+	position: relative;
+	top: 20px;
+}
